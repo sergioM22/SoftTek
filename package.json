@@ -1,0 +1,39 @@
+{
+  "name": "softtek_pruebatecnica",
+  "version": "1.0.0",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "dynamodb:PutItem"
+      ],
+      "Resource": "arn:aws:dynamodb:us-east-1:376082975720:table/Fusionados"
+    }
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "aws-sdk": "^2.1692.0",
+    "axios": "^1.10.0",
+    "dotenv": "^17.0.0",
+    "serverless": "^4.17.1",
+    "serverless-offline": "^14.4.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@serverless/typescript": "^4.15.1",
+    "@types/dotenv": "^6.1.1",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.0.7",
+    "jest": "^30.0.3",
+    "ts-jest": "^29.4.0"
+  }
+}
